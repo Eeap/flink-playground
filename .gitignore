@@ -12,6 +12,11 @@ target/
 *.iml
 *.ipr
 .idea
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -30,7 +35,6 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-
 ### VS Code ###
 .vscode/
 
