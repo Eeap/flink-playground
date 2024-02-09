@@ -7,7 +7,7 @@ plugins {
 // artifact properties
 version = '0.1-SNAPSHOT'
 ext {
-    javaVersion = '1.8'
+    javaVersion = '1.11'
     flinkVersion = '1.18.0'
     scalaBinaryVersion = '_2.12'
     slf4jVersion = '1.7.36'
@@ -48,6 +48,8 @@ dependencies {
     // Compile-time dependencies that should NOT be part of the
     // shadow (uber) jar and are provided in the lib folder of Flink
     // --------------------------------------------------------------
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
     implementation "org.apache.flink:flink-streaming-java:${flinkVersion}"
     implementation "org.apache.flink:flink-clients:${flinkVersion}"
     // --------------------------------------------------------------
