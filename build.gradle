@@ -8,7 +8,7 @@ plugins {
 version = '0.1-SNAPSHOT'
 ext {
     javaVersion = '1.11'
-    flinkVersion = '1.18.0'
+    flinkVersion = '1.18.1'
     scalaBinaryVersion = '_2.12'
     slf4jVersion = '1.7.36'
     log4jVersion = '2.17.1'
