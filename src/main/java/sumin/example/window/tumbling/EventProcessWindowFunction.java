@@ -5,6 +5,7 @@ import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
+import sumin.example.window.Event;
 
 public class EventProcessWindowFunction extends ProcessWindowFunction<Event, String, Long, TimeWindow> {
     ValueState<Integer> count;

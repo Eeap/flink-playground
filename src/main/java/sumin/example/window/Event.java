@@ -1,4 +1,4 @@
-package sumin.example.window.tumbling;
+package sumin.example.window;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
