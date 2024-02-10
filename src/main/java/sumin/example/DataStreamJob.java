@@ -3,6 +3,7 @@ package sumin.example;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import sumin.example.window.sliding.SlidingEventTimeWindow;
 import sumin.example.window.tumbling.TumblingEventTimeWindow;
 
 /**
@@ -24,7 +25,8 @@ public class DataStreamJob {
 		// to building Flink applications.
 		final StreamExecutionEnvironment env =
 				StreamExecutionEnvironment.getExecutionEnvironment();
-		TumblingEventTimeWindow job = new TumblingEventTimeWindow(env);
+//		TumblingEventTimeWindow job = new TumblingEventTimeWindow(env);
+		SlidingEventTimeWindow job = new SlidingEventTimeWindow(env);
 		job.execute();
 	}
 }
