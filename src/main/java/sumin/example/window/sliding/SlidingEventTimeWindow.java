@@ -30,7 +30,7 @@ public class SlidingEventTimeWindow {
         // Streaming Source with Source Function
         DataStreamSource<Event> source = env.addSource(new EventSourceGenerator());
 
-        // Tumbling Event Time Window
+        // Sliding Event Time Window
         source.assignTimestampsAndWatermarks(
                         WatermarkStrategy
                                 .<Event>forBoundedOutOfOrderness(Duration.ofSeconds(5))
